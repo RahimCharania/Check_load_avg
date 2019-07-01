@@ -4,6 +4,6 @@
 
         sort -k2 -n -t, loadavg.csv
         where,
-        -k1 sorts by column 1.
-        -n sorts numerically instead of lexicographically (so "11" will not come before "2,3...").
-        -t, sets the delimiter (what separates values in your file) to , since your file is comma-separated.
+        -k2 sorts by column 2.
+        -n sorts numerically instead of lexicographically.
+        -t, sets the delimiter (what separates values in your file) to, since your file is comma-separated","
