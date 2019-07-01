@@ -20,7 +20,7 @@ do
 done
 
 
-for i in comp-hc-{0001..0024}
+for i in comp-lc-{0001..0096}
 do
         echo "$i,`cat TEXT|grep $i|sed -n -e 's/^.*loadave=//p'|cut -d, -f1`"
 done
