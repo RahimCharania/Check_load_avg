@@ -2,11 +2,12 @@ readonly SCRIPT=$(basename $0)
 readonly AUTHOR="Rahim Charania"
 readonly REVISION="1.0"
 
-bash first_draft.sh > loadavg.csv
 
 for i in (1..10)
 
 do
+
+bash first_draft.sh > loadavg.csv
 
 time= `date +"%Y%m%d_%H%M%p"`
 sort -k2 -n -r -t, loadavg.csv|awk -F ',' '$2>=40' > highloadavg.csv
